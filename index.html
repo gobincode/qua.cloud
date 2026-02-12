@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Synqra — Get access to the best AI coding models at the most affordable rates. Claude, Gemini, GPT, Grok and more.">
+    <title>Synqra — Affordable AI Model Credits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="url(#logoGrad)" />
+                        <path d="M10 16L14 12L18 16L14 20Z" fill="white" opacity="0.9" />
+                        <path d="M14 12L22 12L18 16Z" fill="white" opacity="0.6" />
+                        <path d="M14 20L22 20L18 16Z" fill="white" opacity="0.6" />
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                                <stop stop-color="#0047AB" />
+                                <stop offset="1" stop-color="#1E3A8A" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span>Synqra</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#models">Models</a></li>
+                <li><a href="#features">Why Us</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#pricing" class="nav-cta">Get Started</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge animate-on-scroll">
+                <i class="fas fa-bolt"></i>
+                <span>All top AI models — one affordable plan</span>
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                Get Access to Different AI Models<br>
+                <span class="hero-highlight">at Most Affordable Rates</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                One platform, every top AI coding model. Pay a fraction of the cost and unlock
+                Claude, Gemini, GPT, and Grok — all from a single dashboard.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#pricing" class="btn btn-primary btn-lg">
+                    <span>Get Started</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#models" class="btn btn-ghost btn-lg">
+                    <span>Explore Models</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">25+</span>
+                    <span class="hero-stat-label">AI Models</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">75%</span>
+                    <span class="hero-stat-label">Cost Savings</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">99.9%</span>
+                    <span class="hero-stat-label">Uptime</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ AI MODELS SECTION ═══════════════════ -->
+    <section class="models-section" id="models">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">AI Models</span>
+                <h2 class="section-title">Access Every Leading AI Coding Model</h2>
+                <p class="section-desc">From code generation to debugging, pick the perfect model for your workflow. All
+                    models, one simple plan.</p>
+            </div>
+
+            <!-- Model Filter Tabs -->
+            <div class="model-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Models</button>
+                <button class="filter-btn" data-filter="claude">Claude</button>
+                <button class="filter-btn" data-filter="gemini">Gemini</button>
+            </div>
+
+            <!-- Models Grid -->
+            <div class="models-grid" id="modelsGrid">
+
+                <!-- ──── CLAUDE MODELS ──── -->
+                <div class="model-card animate-on-scroll" data-category="claude">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon claude-icon">
+                                <img src="claude-logo.png" alt="Claude" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-premium">Flagship</div>
+                        </div>
+                        <h3 class="model-name">Claude Opus 4.5</h3>
+                        <p class="model-provider">Anthropic</p>
+                        <p class="model-desc">The most powerful Claude model. Exceptional at complex reasoning, code
+                            architecture, and multi-step analysis.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Reasoning</span>
+                            <span class="model-tag">Code Gen</span>
+                            <span class="model-tag">Analysis</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:98%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="claude">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon claude-icon">
+                                <img src="claude-logo.png" alt="Claude" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-new">New</div>
+                        </div>
+                        <h3 class="model-name">Claude Opus 4.1</h3>
+                        <p class="model-provider">Anthropic</p>
+                        <p class="model-desc">Latest iteration of the Opus line with improved instruction-following and
+                            enhanced coding capabilities.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Reasoning</span>
+                            <span class="model-tag">Coding</span>
+                            <span class="model-tag">Long Context</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:96%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="claude">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon claude-icon">
+                                <img src="claude-logo.png" alt="Claude" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-popular">Popular</div>
+                        </div>
+                        <h3 class="model-name">Claude Sonnet 4.5</h3>
+                        <p class="model-provider">Anthropic</p>
+                        <p class="model-desc">Perfect balance of speed and intelligence. Best for everyday coding tasks,
+                            refactoring, and code review.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Fast</span>
+                            <span class="model-tag">Code Review</span>
+                            <span class="model-tag">Refactoring</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:92%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="claude">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon claude-icon">
+                                <img src="claude-logo.png" alt="Claude" class="model-logo-img">
+                            </div>
+                        </div>
+                        <h3 class="model-name">Claude 3.5 Sonnet</h3>
+                        <p class="model-provider">Anthropic</p>
+                        <p class="model-desc">Battle-tested coding model. Exceptional at code generation, debugging, and
+                            technical writing.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Stable</span>
+                            <span class="model-tag">Debugging</span>
+                            <span class="model-tag">Writing</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:90%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="claude">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon claude-icon">
+                                <img src="claude-logo.png" alt="Claude" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-fast">Lightning</div>
+                        </div>
+                        <h3 class="model-name">Claude 3.5 Haiku</h3>
+                        <p class="model-provider">Anthropic</p>
+                        <p class="model-desc">Ultra-fast and cost-efficient. Ideal for autocomplete, quick edits, and
+                            high-throughput tasks.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Ultra Fast</span>
+                            <span class="model-tag">Lightweight</span>
+                            <span class="model-tag">Efficient</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:82%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ──── GEMINI MODELS ──── -->
+                <div class="model-card animate-on-scroll" data-category="gemini">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gemini-icon">
+                                <img src="gemini-logo.png" alt="Gemini" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-premium">Flagship</div>
+                        </div>
+                        <h3 class="model-name">Gemini 3 Pro</h3>
+                        <p class="model-provider">Google DeepMind</p>
+                        <p class="model-desc">Next-gen multimodal model with state-of-the-art reasoning and massive
+                            context window capabilities.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Multimodal</span>
+                            <span class="model-tag">Reasoning</span>
+                            <span class="model-tag">1M Context</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:97%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gemini">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gemini-icon">
+                                <img src="gemini-logo.png" alt="Gemini" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-fast">Lightning</div>
+                        </div>
+                        <h3 class="model-name">Gemini 3 Flash</h3>
+                        <p class="model-provider">Google DeepMind</p>
+                        <p class="model-desc">Blazing-fast responses with strong coding capabilities. Built for speed
+                            without sacrificing quality.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Ultra Fast</span>
+                            <span class="model-tag">Code Gen</span>
+                            <span class="model-tag">Efficient</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:91%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gemini">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gemini-icon">
+                                <img src="gemini-logo.png" alt="Gemini" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-popular">Popular</div>
+                        </div>
+                        <h3 class="model-name">Gemini 2.5 Pro</h3>
+                        <p class="model-provider">Google DeepMind</p>
+                        <p class="model-desc">Excellent at complex coding, deep thinking, and multi-step problem solving
+                            with extended context.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Deep Thinking</span>
+                            <span class="model-tag">Long Context</span>
+                            <span class="model-tag">Coding</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:94%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gemini">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gemini-icon">
+                                <img src="gemini-logo.png" alt="Gemini" class="model-logo-img">
+                            </div>
+                        </div>
+                        <h3 class="model-name">Gemini 2.5 Flash</h3>
+                        <p class="model-provider">Google DeepMind</p>
+                        <p class="model-desc">Fast and reliable for everyday coding. Great for quick iterations, code
+                            completion, and reviews.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Fast</span>
+                            <span class="model-tag">Reliable</span>
+                            <span class="model-tag">Versatile</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:88%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gemini">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gemini-icon">
+                                <img src="gemini-logo.png" alt="Gemini" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-budget">Budget</div>
+                        </div>
+                        <h3 class="model-name">Gemini 2.5 Flash-Lite</h3>
+                        <p class="model-provider">Google DeepMind</p>
+                        <p class="model-desc">Most cost-effective Gemini model. Perfect for high-volume, low-latency
+                            tasks and simple queries.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Budget</span>
+                            <span class="model-tag">Low Latency</span>
+                            <span class="model-tag">High Volume</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:78%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ──── GPT / OPENAI MODELS REMOVED ──── -->
+                <!-- ──── GROK MODELS REMOVED ──── -->
+
+            </div>
+
+            <div class="models-cta animate-on-scroll">
+                <a href="#pricing" class="btn btn-primary btn-lg">
+                    <span>Get Started with All Models</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FEATURES / WHY CHOOSE US ═══════════════════ -->
+    <section class="features-section" id="features">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Why Synqra</span>
+                <h2 class="section-title">Built for Developers Who Ship</h2>
+                <p class="section-desc">We obsess over the details so you can focus on building great software.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon"><i class="fas fa-wallet"></i></div>
+                    </div>
+                    <h3>75% Cost Savings</h3>
+                    <p>Access premium AI models at a fraction of direct API costs. Same power, dramatically lower bills.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>SOC2-compliant infrastructure with end-to-end encryption. Your code and data never leave secure
+                        channels.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Global edge network ensures sub-100ms latency. No cold starts, no waiting — just instant
+                        responses.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon"><i class="fas fa-rotate"></i></div>
+                    </div>
+                    <h3>Unified API</h3>
+                    <p>One API key for all models. Switch between Claude, Gemini, GPT, and Grok with a single parameter
+                        change.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                    <h3>Usage Analytics</h3>
+                    <p>Real-time dashboards showing token usage, costs, and performance metrics across all your
+                        projects.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated engineering support team available around the clock. Average response time under 5
+                        minutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ PRICING SECTION ═══════════════════ -->
+    <section class="pricing-section" id="pricing">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">One Plan. Unlimited Potential.</h2>
+                <p class="section-desc">No hidden fees. No complicated tiers. Just simple, affordable access to every AI
+                    model.</p>
+            </div>
+            <div class="pricing-card-wrapper animate-on-scroll">
+                <div class="pricing-card">
+                    <div class="pricing-card-glow"></div>
+                    <div class="pricing-ribbon">🔥 Launch Special — 75% OFF</div>
+                    <div class="pricing-card-inner">
+                        <div class="pricing-header">
+                            <h3 class="pricing-plan-name">Pro Access</h3>
+                            <p class="pricing-plan-desc">Everything you need to supercharge your development workflow
+                            </p>
+                        </div>
+                        <div class="pricing-amount">
+                            <div class="pricing-original">
+                                <span class="pricing-slash">$100</span>
+                                <span class="pricing-slash-label">/month</span>
+                            </div>
+                            <div class="pricing-current">
+                                <span class="pricing-dollar">$</span>
+                                <span class="pricing-value">25</span>
+                                <span class="pricing-period">/month</span>
+                            </div>
+                            <div class="pricing-savings">
+                                <i class="fas fa-tags"></i>
+                                You save <strong>$75 every month</strong>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i>Access to <strong>all 22+ AI models</strong></li>
+                            <li><i class="fas fa-check"></i><strong>Unlimited</strong> API requests</li>
+                            <li><i class="fas fa-check"></i>Claude, Gemini, GPT & Grok included</li>
+                            <li><i class="fas fa-check"></i>Real-time usage dashboard</li>
+                            <li><i class="fas fa-check"></i>Unified API with one key</li>
+                            <li><i class="fas fa-check"></i>Priority model access</li>
+                            <li><i class="fas fa-check"></i>24/7 dedicated support</li>
+                            <li><i class="fas fa-check"></i>99.9% uptime SLA</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-xl pricing-btn">
+                            <span>Get Started Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <p class="pricing-guarantee">
+                            <i class="fas fa-shield-halved"></i>
+                            30-day money-back guarantee. Cancel anytime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FAQ SECTION ═══════════════════ -->
+    <section class="faq-section" id="faq">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Got Questions? We've Got Answers.</h2>
+                <p class="section-desc">Everything you need to know about Synqra.</p>
+            </div>
+            <div class="faq-grid animate-on-scroll">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How does Synqra provide such low prices?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We negotiate bulk pricing with AI providers and pass the savings directly to you — no
+                            middleman markup, no hidden fees.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Which AI models are included?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your subscription includes all models from Anthropic (Claude), Google DeepMind (Gemini),
+                            OpenAI (GPT), and xAI (Grok). That's 22+ cutting-edge AI coding models, all accessible from
+                            a single API.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is there a usage limit?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No strict usage limits. Our Pro plan includes generous token allotments that cover most
+                            development workflows. If you need higher volumes, contact our team for custom enterprise
+                            pricing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How secure is my data?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We take security seriously. All data is encrypted in transit (TLS 1.3) and at rest (AES-256).
+                            We are SOC2 Type II compliant and never store your prompts or code beyond the request
+                            lifecycle.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I cancel my subscription anytime?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Cancel with one click — no contracts, no cancellation fees. Plus, we offer a full
+                            30-day money-back guarantee if you're not satisfied.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you support team plans?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer team and enterprise plans with shared billing, role-based access, and
+                            centralized usage analytics. Contact our sales team for a custom quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+    <section class="cta-section">
+        <div class="cta-bg-effects">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="section-container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Ready to Transform Your Dev Workflow?</h2>
+                <p>Start saving 75% on AI model access today. Build smarter, ship faster.</p>
+                <a href="#pricing" class="btn btn-primary btn-xl">
+                    <span>Get Started for $25/mo</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer content removed as requested -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Synqra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
