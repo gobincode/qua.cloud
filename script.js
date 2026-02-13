@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   Synqra — Interactive JS
+   Quatarly — Interactive JS
    ═══════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
                 // Stagger animation for grid items
-                const delay = entry.target.closest('.models-grid, .features-grid, .faq-grid')
+                const delay = entry.target.closest('.models-grid, .features-grid, .faq-grid, .testimonials-grid')
                     ? Array.from(entry.target.parentElement.children).indexOf(entry.target) * 60
                     : 0;
 
