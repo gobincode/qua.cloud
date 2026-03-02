@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const priceObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    animateCounter(priceValue, 0, 25, 1200);
+                    animateCounter(priceValue, 0, 30, 1200);
                     priceObserver.unobserve(entry.target);
                 }
             });

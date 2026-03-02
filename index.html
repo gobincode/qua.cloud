@@ -60,7 +60,7 @@
             </h1>
             <p class="hero-subtitle animate-on-scroll">
                 One platform, every top AI coding model. Pay a fraction of the cost and unlock
-                Claude and Gemini — all from a single dashboard.
+                Claude, Gemini, and GPT — all from a single dashboard.
             </p>
             <div class="hero-actions animate-on-scroll">
                 <a href="#contact" class="btn btn-primary btn-lg">
@@ -100,6 +100,7 @@
                 <button class="filter-btn active" data-filter="all">All Models</button>
                 <button class="filter-btn" data-filter="claude">Claude</button>
                 <button class="filter-btn" data-filter="gemini">Gemini</button>
+                <button class="filter-btn" data-filter="gpt">GPT</button>
             </div>
 
             <!-- Models Grid -->
@@ -142,7 +143,7 @@
                             </div>
                             <div class="model-badge model-badge-premium">Flagship</div>
                         </div>
-                        <h3 class="model-name">Claude Opus 4.5</h3>
+                        <h3 class="model-name">Claude Sonnet 4.6</h3>
                         <p class="model-provider">Anthropic</p>
                         <p class="model-desc">Exceptional performance for large-scale enterprise development.</p>
                         <div class="model-tags">
@@ -224,9 +225,9 @@
                             </div>
                             <div class="model-badge model-badge-premium">Flagship</div>
                         </div>
-                        <h3 class="model-name">Gemini 3 Pro</h3>
+                        <h3 class="model-name">Gemini 3.1 Pro High</h3>
                         <p class="model-provider">Google DeepMind</p>
-                        <p class="model-desc">State-of-the-art multimodal reasoning with 1M+ context window.</p>
+                        <p class="model-desc">State-of-the-art multimodal reasoning with 1M+ context window and maximum throughput.</p>
                         <div class="model-tags">
                             <span class="model-tag">Multimodal</span>
                             <span class="model-tag">1M Context</span>
@@ -276,6 +277,33 @@
                             <div class="model-icon gemini-icon">
                                 <img src="gemini-logo.png" alt="Gemini" class="model-logo-img">
                             </div>
+                            <div class="model-badge model-badge-popular">Popular</div>
+                        </div>
+                        <h3 class="model-name">Gemini 3.1 Pro Low</h3>
+                        <p class="model-provider">Google DeepMind</p>
+                        <p class="model-desc">Efficient Pro-tier performance optimized for cost-sensitive and high-volume workloads.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Efficient</span>
+                            <span class="model-tag">Pro-tier</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:94%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gemini">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gemini-icon">
+                                <img src="gemini-logo.png" alt="Gemini" class="model-logo-img">
+                            </div>
                             <div class="model-badge model-badge-fast">Lightning</div>
                         </div>
                         <h3 class="model-name">Gemini 3 Flash</h3>
@@ -289,6 +317,142 @@
                             <div class="model-perf">
                                 <div class="perf-bar">
                                     <div class="perf-fill" style="width:93%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ──── GPT MODELS ──── -->
+                <div class="model-card animate-on-scroll" data-category="gpt">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gpt-icon">
+                                <img src="openai.jpg" alt="GPT" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-premium">Flagship</div>
+                        </div>
+                        <h3 class="model-name">GPT-5.1</h3>
+                        <p class="model-provider">OpenAI</p>
+                        <p class="model-desc">OpenAI's next-gen flagship with unparalleled reasoning and multimodal capabilities.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Multimodal</span>
+                            <span class="model-tag">Reasoning</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:98%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gpt">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gpt-icon">
+                                <img src="openai.jpg" alt="GPT" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-popular">Popular</div>
+                        </div>
+                        <h3 class="model-name">GPT-5.1 Codex</h3>
+                        <p class="model-provider">OpenAI</p>
+                        <p class="model-desc">Code-specialized variant of GPT-5.1. Purpose-built for software engineering tasks.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Coding</span>
+                            <span class="model-tag">Autocomplete</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:97%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gpt">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gpt-icon">
+                                <img src="openai.jpg" alt="GPT" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-premium">Flagship</div>
+                        </div>
+                        <h3 class="model-name">GPT-5.2</h3>
+                        <p class="model-provider">OpenAI</p>
+                        <p class="model-desc">Advanced successor to GPT-5.1 with deeper context understanding and enhanced accuracy.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Advanced</span>
+                            <span class="model-tag">Reasoning</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:99%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gpt">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gpt-icon">
+                                <img src="openai.jpg" alt="GPT" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-popular">Popular</div>
+                        </div>
+                        <h3 class="model-name">GPT-5.2 Codex</h3>
+                        <p class="model-provider">OpenAI</p>
+                        <p class="model-desc">The most capable code model from OpenAI. Ideal for complex refactors and architecture work.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Coding</span>
+                            <span class="model-tag">Architecture</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:98%"></div>
+                                </div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-card animate-on-scroll" data-category="gpt">
+                    <div class="model-card-glow"></div>
+                    <div class="model-card-inner">
+                        <div class="model-header">
+                            <div class="model-icon gpt-icon">
+                                <img src="openai.jpg" alt="GPT" class="model-logo-img">
+                            </div>
+                            <div class="model-badge model-badge-fast">Lightning</div>
+                        </div>
+                        <h3 class="model-name">GPT-5.3 Codex</h3>
+                        <p class="model-provider">OpenAI</p>
+                        <p class="model-desc">Ultra-fast code generation with cutting-edge accuracy for real-time development workflows.</p>
+                        <div class="model-tags">
+                            <span class="model-tag">Fast</span>
+                            <span class="model-tag">Coding</span>
+                        </div>
+                        <div class="model-footer">
+                            <div class="model-perf">
+                                <div class="perf-bar">
+                                    <div class="perf-fill" style="width:100%"></div>
                                 </div>
                                 <span>Performance</span>
                             </div>
@@ -329,8 +493,7 @@
                         <div class="feature-icon"><i class="fas fa-rotate"></i></div>
                     </div>
                     <h3>Unified API</h3>
-                    <p>One API key for all models. Switch between Claude and Gemini with a single parameter
-                        change.</p>
+                    <p>One API key for all models. Switch between Claude, Gemini, and GPT with a single parameter change.</p>
                 </div>
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon-wrap">
@@ -370,18 +533,18 @@
                             </div>
                             <div class="pricing-current">
                                 <span class="pricing-dollar">$</span>
-                                <span class="pricing-value">25</span>
+                                <span class="pricing-value">30</span>
                                 <span class="pricing-period">/month</span>
                             </div>
                             <div class="pricing-savings">
                                 <i class="fas fa-tags"></i>
-                                You save <strong>$75 every month</strong>
+                                You save <strong>$70 every month</strong>
                             </div>
                         </div>
                         <ul class="pricing-features">
                             <li><i class="fas fa-check"></i>Access to <strong>all 35+ AI models</strong></li>
                             <li><i class="fas fa-check"></i><strong>Unlimited</strong> API requests</li>
-                            <li><i class="fas fa-check"></i>Claude & Gemini included</li>
+                            <li><i class="fas fa-check"></i>Claude, Gemini & GPT included</li>
                             <li><i class="fas fa-check"></i>Real-time usage dashboard</li>
                             <li><i class="fas fa-check"></i>Unified API with one key</li>
                             <li><i class="fas fa-check"></i>Priority model access</li>
@@ -480,7 +643,7 @@
                     <div class="trial-premium-content">
                         <div class="trial-label">Developer Alpha</div>
                         <h2 class="trial-premium-title">Build with 10 Million <br><span class="gradient-text">Free Tokens</span></h2>
-                        <p class="trial-premium-desc">Access Claude 4.5 and Gemini 3 without friction. Start your trial and see why top engineering teams choose Quatarly.</p>
+                        <p class="trial-premium-desc">Access Claude, Gemini, and GPT without friction. Start your trial and see why top engineering teams choose Quatarly.</p>
                         <a href="#contact" class="btn btn-primary btn-xl">
                             <span>Ping to Claim</span>
                             <i class="fas fa-arrow-right"></i>
@@ -527,7 +690,7 @@
                         <i class="fas fa-chevron-down faq-icon"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Your subscription includes all models from Anthropic (Claude) and Google DeepMind (Gemini). That's 35+ cutting-edge AI coding models, all accessible from a single API.</p>
+                        <p>Your subscription includes all models from Anthropic (Claude), Google DeepMind (Gemini), and OpenAI (GPT). That's 35+ cutting-edge AI coding models, all accessible from a single API.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -603,14 +766,14 @@
                 <p class="section-desc">To get your trial or premium credits, reach out to us directly on Discord or Reddit.</p>
             </div>
             <div class="social-links-grid animate-on-scroll">
-                <a href="https://discord.gg/uvK7DBWy" target="_blank" class="social-card discord-card">
+                <a href="https://discord.gg/fCQHHSZyNe" target="_blank" class="social-card discord-card">
                     <div class="social-icon"><i class="fab fa-discord"></i></div>
                     <div class="social-info">
                         <span>Join our Community</span>
                         <strong>Official Discord</strong>
                     </div>
                 </a>
-                <a href="https://www.reddit.com/user/Popular-Category711/" target="_blank" class="social-card reddit-card">
+                <a href="https://www.reddit.com/user/DisasterBrief5272/" target="_blank" class="social-card reddit-card">
                     <div class="social-icon"><i class="fab fa-reddit-alien"></i></div>
                     <div class="social-info">
                         <span>Follow on Reddit</span>
